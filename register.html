@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Register</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:40px;
+}
+
+div{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    width:250px;
+}
+
+h2{
+    text-align:center;
+}
+
+label{
+    font-size:14px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:10px;
+    background:#4facfe;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:#2f8df7;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+<h2>User Register</h2>
+<form action="register" method="post">
+<label>Name:</label>
+<input type="text" name="name">
+
+<label>Email</label>
+<input type="text" name="email">
+
+<label>Password</label>
+<input type="password" name="pass">
+
+<label>Confirm Password</label>
+<input type="password" name="cpass">
+
+<input type="hidden" name="type" value="user">
+
+<input type="submit" value="Register">
+<p>Already registered? <a href="login.html">Login here</a></p>
+</form>
+</div>
+
+<div>
+<h2>Admin Register</h2>
+<form action="register" method="post">
+
+<label>Name:</label>
+<input type="text" name="name">
+
+<label>Email</label>
+<input type="text" name="email">
+
+<label>Password</label>
+<input type="password" name="pass">
+
+<label>Confirm Password</label>
+<input type="password" name="cpass">
+
+<input type="hidden" name="type" value="admin">
+
+<input type="submit" value="Register">
+<p>Already registered? <a href="login.html">Login here</a></p>
+</form>
+</div>
+
+</body>
+</html>

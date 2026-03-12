@@ -1,0 +1,108 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="5.0">
+
+    <welcome-file-list>
+        <welcome-file>register.html</welcome-file>
+    </welcome-file-list>
+
+     <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.ProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/addProduct</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.DashboardServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/placeOrder</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.ecommerce.controller.CartServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+      <servlet>
+        <servlet-name>ViewOrders</servlet-name>
+        <servlet-class>com.ecommerce.controller.ViewOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewOrders</servlet-name>
+        <url-pattern>/viewOrders</url-pattern>
+    </servlet-mapping>
+
+      <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.ecommerce.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>EditProductServlet</servlet-name>
+    <servlet-class>com.ecommerce.controller.EditProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>EditProductServlet</servlet-name>
+    <url-pattern>/editProduct</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>com.ecommerce.controller.DeleteProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/deleteProduct</url-pattern>
+</servlet-mapping>
+
+</web-app>
