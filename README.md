@@ -9,7 +9,7 @@ This command compiles all Java files and puts the .class files in WEB-INF/classe
 
 4. Start the server using "C:\apache-tomcat-10.1.43\bin" then run startup.bat
 
-http://localhost:8080/VirtualDrive
+http://localhost:8080/ECommerce
 
 5. Required Library WEB-INF/lib/ -> mysql-connector-j-9.3.0.jar
 Admin portal:
